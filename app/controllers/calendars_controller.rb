@@ -18,7 +18,7 @@ class CalendarsController < ApplicationController
     params.require(:plan).permit(:date, :plan)
   end
 
-  def getWeek
+  def get_Week
     # 曜日の配列を取得
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
 
